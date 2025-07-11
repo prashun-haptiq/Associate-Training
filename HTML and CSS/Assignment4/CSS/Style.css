@@ -528,12 +528,12 @@ text-align: center; */
 
 
 
-/* @media screen and (max-width: 678px) {
+@media screen and (max-width: 678px) {
     .headerSection nav {
-    display: none; 
+     display: none; 
 }
 
 .feature {
     flex-direction: column;
   }
-} */
+}
