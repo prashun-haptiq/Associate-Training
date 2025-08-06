@@ -1,0 +1,26 @@
+body {
+  /* Set a relative position for the body so the pseudo-element can be absolutely positioned within it */
+  position: relative; 
+  /* Add a height to your body to make sure the background is visible */
+  min-height: 100vh; 
+}
+
+body::before {
+  /* This is the pseudo-element that will hold the background image */
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('C:\Users\Prashun Agrawal\Associate Training\React\ecom\public\images\foot.jpg');
+  background-size: cover; /* This makes sure the image covers the entire background */
+  background-position: center; /* Centers the background image */
+  
+  /* Apply the opacity here. 0.5 is 50% transparent. */
+  opacity: 10;
+  
+  /* Set z-index to a negative value to place the background behind the body content */
+  z-index:-1; 
+}
+
